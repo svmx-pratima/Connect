@@ -1,0 +1,71 @@
+{
+  "entityType": "MAPPING",
+  "sfm_Rule": {
+    "expressionsList": [
+      {
+        "actionType": "Set Value",
+        "configurationType": "Field Mapping",
+        "expressionId": null,
+        "literalValue": null,
+        "operator": null,
+        "parameterType": "Field Value",
+        "sequence": 1,
+        "sourceField": "SVMXC__Date_Installed__c",
+        "sourceFieldLabel": "Date Required",
+        "sourceFldDtaType": "DATE",
+        "targetField": "SVMXC__Date_Requested__c",
+        "value": "SVMXC__Date_Installed__c"
+      },
+      {
+        "actionType": "Set Value",
+        "configurationType": "Field Mapping",
+        "expressionId": null,
+        "literalValue": null,
+        "operator": null,
+        "parameterType": "Value",
+        "sequence": 2,
+        "sourceField": null,
+        "sourceFieldLabel": "Line Type",
+        "sourceFldDtaType": "PICKLIST",
+        "targetField": "SVMXC__Line_Type__c",
+        "value": "Parts"
+      },
+      {
+        "actionType": "Set Value",
+        "configurationType": "Field Mapping",
+        "expressionId": null,
+        "literalValue": null,
+        "operator": null,
+        "parameterType": "Field Value",
+        "sequence": 3,
+        "sourceField": "SVMXC__Product__c",
+        "sourceFieldLabel": "Part",
+        "sourceFldDtaType": "REFERENCE",
+        "targetField": "SVMXC__Product__c",
+        "value": "SVMXC__Product__c"
+      },
+      {
+        "actionType": "Set Value",
+        "configurationType": "Field Mapping",
+        "expressionId": null,
+        "literalValue": null,
+        "operator": null,
+        "parameterType": "Value",
+        "sequence": 4,
+        "sourceField": null,
+        "sourceFieldLabel": "Record Type ID",
+        "sourceFldDtaType": "REFERENCE",
+        "targetField": "RecordTypeId",
+        "value": "Usage/Consumption"
+      }
+    ],
+    "message": null,
+    "ruleDetail": {
+      "entityId": null,
+      "entityName": "RS_10554_Part17620191202",
+      "entitySubType": null
+    },
+    "sourceObject": "SVMXC__Installed_Product__c",
+    "targetObject": "SVMXC__Service_Order_Line__c"
+  }
+}
